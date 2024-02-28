@@ -1,0 +1,12 @@
+[hr_database]
+hr_database_server ansible_host=hr_database_server_address 
+
+[sox_production_databases]
+sox_prd_1 ansible_host=sox_prd_1_address ansible_user=your_ssh_user
+sox_prd_2 ansible_host=sox_prd_2_address ansible_user=your_ssh_user
+
+[email_group]
+email@example.com
+
+[hr_database:var]
+ansible_user=your_ssh_user

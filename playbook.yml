@@ -1,0 +1,11 @@
+---
+- name: ENHC0010585 Project Playbook
+  hosts: localhost
+  gather_facts: false
+
+  roles:
+    - dwprd_term_emp_list
+    - sox_prd_db_users
+    - dwprd_users_in_sox_check
+    - disable_sox_db_from_dwprd
+    - sox_srv_orphans_dwprd
